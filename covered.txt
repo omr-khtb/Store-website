@@ -1,0 +1,16 @@
+show domain name
+signup
+signup validation
+show password
+show sign up in database
+login after sign up
+show name on top
+show home page
+show darkmode
+show location
+log outshow products
+show check out 
+login again and delte account
+show chatbot and how to reply
+show contact us and how to validate and the databse
+

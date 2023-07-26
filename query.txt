@@ -1,0 +1,9 @@
+CREATE TABLE persons (
+     personid int NOT NULL AUTO_INCREMENT,
+    names varchar(255),
+    emails varchar(255),
+    passes varchar(255),
+    PRIMARY KEY (personid)
+    
+);
+

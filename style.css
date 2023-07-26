@@ -1,0 +1,485 @@
+/*nav and footer*/
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: white;
+}
+
+
+/* header {
+    background: linear-gradient(Orgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/for_web.jpg);
+    fatla color 093a3a
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
+.wrapper {
+	width: 100%;
+
+}
+
+.menu {
+	/* float: right; */
+	display: flex;
+	list-style: none;
+	margin-top: 0px;
+	margin-right: 10px;
+	width: 100%;
+	justify-content: flex-end;
+	gap: 5px;
+}
+
+/* .menu li {
+    display: inline-block;
+} */
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	/* transition: all 2s; */
+}
+
+.menu li a:hover {
+	background: #fff;
+	color: #333;
+	border-radius: 10px;
+	animation-name: any_time;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+/* .logo {
+     float: left; 
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+
+@keyframes any_time {
+	form {
+		background-color: #fff;
+	}
+
+	to {
+		background-color: #292c2f;
+	}
+}
+
+/* .text a didn't made */
+
+.text a {
+	background: orange;
+	border-radius: 10px;
+	padding: 15px 25px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+
+.text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.text p {
+	color: #fff;
+	font-size: 30px;
+}
+
+@media (max-width:650px) {
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 5px;
+	}
+
+	.menu {
+		float: none;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.menu li a {
+		padding: 5px;
+		font-size: 11px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.text {
+		/*to align the text int the center even if the screen is small*/
+		width: 100%;
+		height: 100%;
+		margin: 30% 0;
+	}
+
+	.text h1 {
+		font-size: 30px;
+	}
+
+	.text p {
+		font-size: 18px;
+	}
+
+	/*search for margin steps*/
+
+
+
+
+	/* Sticky footer style and color
+-------------------------------------------------- */
+}
+
+footer {
+	padding-top: 30px;
+	background-color: #292c2f;
+	color: #bbb;
+	float: relative;
+}
+
+footer a {
+	color: #999;
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+	color: #aaa;
+	text-decoration: none;
+	border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+	background-color: #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+	color: #d1d2d2;
+	padding: 0.7em 1em;
+}
+
+.col-6 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-content {
+	text-align: center;
+}
+
+.item img {
+	width: 100px;
+
+}
+
+img {
+	border-radius: 10px;
+}
+
+/* .cont {
+     display: flex;
+    flex-wrap: wrap; 
+} */
+
+
+.Nav_Menu {
+	/* margin-left: 20%; */
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 5px;
+}
+
+.Products {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 82%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 3%;
+	/* Means 7dodk el 4a4a el line eki fo2 da */
+	/* margin: 50px 50px 50px 50px; */
+}
+
+.Nav_Bar {
+	background-color: #292c2f;
+	display: flex;
+	/* padding-bottom: 1.5%; */
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 15px;
+}
+
+
+
+.Nav_Logo {
+	width: 30%;
+}
+
+.Nav_Logo img {
+	border-radius: 60%;
+	width: 28%;
+	height: 28%;
+	padding: 5px 0px 0px 0px;
+}
+
+.cover {
+	width: 100%;
+	height: 35%;
+	position: absolute;
+	/*fo2 bs l bottom 0*/
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.466);
+	display: none;
+}
+
+.texttt {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.texttt p {
+	color: #fff;
+	font-size: 20px;
+}
+
+.sing {
+	padding: 50px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	flex-direction: column;
+	/*byshuf kol element w ygybu taht l tany*/
+}
+
+.sing p {
+	font-size: 22px;
+	color: #fff;
+}
+
+
+/*end nav and foter
+---------------
+-----------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #010008, #24243e);
+
+}
+
+.main {
+	width: 350px;
+	height: 500px;
+	overflow: hidden;
+	display: none;
+}
+
+#chk {
+	display: none;
+}
+
+.signupp {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+label {
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+
+}
+
+input {
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 15px auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.submit {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #6d44b8;
+}
+
+.loginn {
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+
+.loginn label {
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked~.loginn {
+	transform: translateY(-500px);
+}
+
+#chk:checked~.loginn label {
+	transform: scale(1);
+}
+
+#chk:checked~.signupp label {
+	transform: scale(.6);
+}
+
+#message {
+	margin: 0px;
+	padding: 0px;
+}
+
+#main {
+	display: block;
+    margin-left: 35%;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+/*google button*/
+
+#allnonav{
+	display: flex;
+}
+
+@media screen and (max-width: 600px) {
+	.Nav_Menu.responsive {
+		position: relative;
+	}
+
+	.Nav_Menu.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+.google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.google-btn .google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.google-btn .btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+  background: #1669F2;
+}
+#main2{
+margin-left:45%;
+margin-top:10%;
+color: white;
+}
