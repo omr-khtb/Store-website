@@ -1,0 +1,517 @@
+body {
+    background-color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+body,
+button,
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px black;
+    z-index: -1;
+}
+
+.palatte {
+    background-color: #72efe9;
+    border-radius: 100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    margin-bottom: 40px;
+}
+
+.palatte2 {
+    background-color: #72efe9;
+    border-radius: 100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 90%;
+    margin-top: 30px;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #72efe9;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #72efe9;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color: #666;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #72efe9;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: #72efe9;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffa4bd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+/* header {
+    background: linear-gradient(Orgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/for_web.jpg);
+    fatla color 093a3a
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    /* float: right; */
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+/* .menu li {
+    display: inline-block;
+} */
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    /* transition: all 2s; */
+}
+
+.menu li a:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    animation-name: any_time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* .logo {
+     float: left; 
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+@keyframes any_time {
+    form {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292c2f;
+    }
+}
+
+/* .text a didn't made */
+
+.text a {
+    background: orange;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.text p {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:650px) {
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 5px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        /*to align the text int the center even if the screen is small*/
+        width: 100%;
+        height: 100%;
+        margin: 30% 0;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    /*search for margin steps*/
+
+
+
+
+    /* Sticky footer style and color
+-------------------------------------------------- */
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    float: relative;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.col-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+
+}
+img{
+   border-radius: 10px;
+}
+
+/* .cont {
+     display: flex;
+    flex-wrap: wrap; 
+} */
+
+
+.Nav_Menu {
+    /* margin-left: 20%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+}
+
+.Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* Means 7dodk el 4a4a el line eki fo2 da */
+    /* margin: 50px 50px 50px 50px; */
+}
+
+.Nav_Bar {
+    background-color: #292c2f;
+    display: flex;
+    /* padding-bottom: 1.5%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+
+
+.Nav_Logo {
+    width: 30%;
+}
+
+.Nav_Logo img {
+    border-radius: 60%;
+    width: 28%;
+    height: 28%;
+    padding: 5px 0px 0px 0px;
+}
+
+.cover {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    /*fo2 bs l bottom 0*/
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: none;
+}
+
+.texttt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texttt p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sing {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    /*byshuf kol element w ygybu taht l tany*/
+}
+
+.sing p {
+    font-size: 22px;
+    color: #fff;
+}
+

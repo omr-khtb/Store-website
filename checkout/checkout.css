@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+body{
+    text-decoration: none;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: white;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}  
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #2ecc71;
+}
+ 
+  /*nav and footer*/
+  * {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+/* header {
+    background: linear-gradient(Orgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/for_web.jpg);
+    fatla color 093a3a
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    /* float: right; */
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+/* .menu li {
+    display: inline-block;
+} */
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    /* transition: all 2s; */
+}
+
+.menu li a:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    animation-name: any_time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* .logo {
+     float: left; 
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+@keyframes any_time {
+    form {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292c2f;
+    }
+}
+
+/* .text a didn't made */
+
+.text a {
+    background: orange;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.text p {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:650px) {
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 5px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        /*to align the text int the center even if the screen is small*/
+        width: 100%;
+        height: 100%;
+        margin: 30% 0;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    /*search for margin steps*/
+
+
+
+
+    /* Sticky footer style and color
+-------------------------------------------------- */
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    float: relative;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.col-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+
+}
+img{
+   border-radius: 10px;
+}
+
+/* .cont {
+     display: flex;
+    flex-wrap: wrap; 
+} */
+
+
+.Nav_Menu {
+    /* margin-left: 20%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+}
+
+.Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* Means 7dodk el 4a4a el line eki fo2 da */
+    /* margin: 50px 50px 50px 50px; */
+}
+
+.Nav_Bar {
+    background-color: #292c2f;
+    display: flex;
+    /* padding-bottom: 1.5%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+
+
+.Nav_Logo {
+    width: 30%;
+}
+
+.Nav_Logo img {
+    border-radius: 60%;
+    width: 28%;
+    height: 28%;
+    padding: 5px 0px 0px 0px;
+}
+
+.cover {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    /*fo2 bs l bottom 0*/
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: none;
+}
+
+.texttt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texttt p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sing {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    /*byshuf kol element w ygybu taht l tany*/
+}
+
+.sing p {
+    font-size: 22px;
+    color: #fff;
+}
+

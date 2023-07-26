@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #071091,#5e85f0);
+	background-attachment: fixed;	
+	background-size: cover;
+}
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	border-radius: 51px;
+	overflow: hidden;
+	height: 350px;
+	width: 650px;
+}
+
+.product-info {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-info h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-info h1:before{
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-info > p {
+font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #012696;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: rgb(125, 115, 216);
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+    position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+
+.right{
+	float: right;
+}
+
+.producthanger{
+	display: flex;
+}
+
+.rightpara{
+	margin-top: 10%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 25px;;
+}
+.leftpara{
+	margin-top: 10%;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 25%;
+
+}
+
+
+
+
+
+
+/*search bar*/
+#nav{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-container{
+	border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    background: #fff;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+}
+#nav{
+	display: flex;
+}
+
+/*text glow*/
+.glow {
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  .glow2 {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
+  
+  /*nav and footer*/
+  * {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+
+/* header {
+    background: linear-gradient(Orgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/for_web.jpg);
+    fatla color 093a3a
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    /* float: right; */
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+/* .menu li {
+    display: inline-block;
+} */
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    /* transition: all 2s; */
+}
+
+.menu li a:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    animation-name: any_time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* .logo {
+     float: left; 
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+@keyframes any_time {
+    form {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292c2f;
+    }
+}
+
+/* .text a didn't made */
+
+.text a {
+    background: orange;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.text p {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:650px) {
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 5px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        /*to align the text int the center even if the screen is small*/
+        width: 100%;
+        height: 100%;
+        margin: 30% 0;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    /*search for margin steps*/
+
+
+
+
+    /* Sticky footer style and color
+-------------------------------------------------- */
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    float: relative;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.col-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+
+}
+img{
+   border-radius: 10px;
+}
+
+/* .cont {
+     display: flex;
+    flex-wrap: wrap; 
+} */
+
+
+.Nav_Menu {
+    
+    /* margin-left: 20%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+}
+
+.Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* Means 7dodk el 4a4a el line eki fo2 da */
+    /* margin: 50px 50px 50px 50px; */
+}
+
+.Nav_Bar {
+    
+    background-color: #292c2f;
+    display: flex;
+    /* padding-bottom: 1.5%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+
+
+.Nav_Logo {
+    width: 30%;
+}
+
+.Nav_Logo img {
+    border-radius: 60%;
+    width: 28%;
+    height: 28%;
+    padding: 5px 0px 0px 0px;
+}
+
+.cover {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    /*fo2 bs l bottom 0*/
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: none;
+}
+
+.texttt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texttt p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sing {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    /*byshuf kol element w ygybu taht l tany*/
+}
+
+.sing p {
+    font-size: 22px;
+    color: #fff;
+}
+
+/*new page design*/

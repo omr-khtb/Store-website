@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    text-decoration: none;
+}
+
+
+/* header {
+    background: linear-gradient(Orgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imgs/for_web.jpg);
+    fatla color 093a3a
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    /* float: right; */
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+/* .menu li {
+    display: inline-block;
+} */
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    /* transition: all 2s; */
+}
+
+.menu li a:hover {
+    background: #fff;
+    color: rgb(230, 0, 0);
+    border-radius: 10px;
+    animation-name: any_time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* .logo {
+     float: left; 
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+} */
+
+.text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+@keyframes any_time {
+    form {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: rgb(27, 223, 223);
+    }
+}
+
+/* .text a didn't made */
+
+.text a {
+    background: orange;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.text p {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:650px) {
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 5px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        /*to align the text int the center even if the screen is small*/
+        width: 100%;
+        height: 100%;
+        margin: 30% 0;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    /*search for margin steps*/
+
+
+
+
+    /* Sticky footer style and color
+-------------------------------------------------- */
+}
+
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+    float: relative;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+.col-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+
+}
+img{
+   border-radius: 10px;
+}
+
+/* .cont {
+     display: flex;
+    flex-wrap: wrap; 
+} */
+
+
+.Nav_Menu {
+    /* margin-left: 20%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px;
+}
+
+.Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* Means 7dodk el 4a4a el line eki fo2 da */
+    /* margin: 50px 50px 50px 50px; */
+}
+
+.Nav_Bar {
+    background-color: #292c2f;
+    display: flex;
+    /* padding-bottom: 1.5%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.Hoodie {
+    display: flex;
+    /* border: solid black; */
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    transition: all 1s;
+    border-radius: 5px;
+    /**/
+    /* border-radius: 25%; */
+
+}
+
+.Hoodie:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+}
+
+.Stickers:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+}
+
+.Bags:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+}
+
+.Hoodie img {
+    width: 100%;
+}
+
+.Stickers {
+    display: flex;
+    /* border: solid black; */
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    transition: all 1s;
+    /* border-radius: 25%; */
+
+}
+
+.Stickers img {
+    width: 100%;
+}
+
+.Bags {
+    display: flex;
+    /* border: solid black; */
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    transition: all 1s;
+    /* border-radius: 25%; */
+}
+
+.Bags img {
+    width: 100%;
+}
+
+.Nav_Logo {
+    width: 30%;
+}
+
+.Nav_Logo img {
+    border-radius: 60%;
+    width: 28%;
+    height: 28%;
+    padding: 5px 0px 0px 0px;
+}
+
+.cover {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    /*fo2 bs l bottom 0*/
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: none;
+}
+
+.texttt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texttt p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sing {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    /*byshuf kol element w ygybu taht l tany*/
+}
+
+.sing p {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+/*sign up button*/
+#btnnn {
+    background-color: #292c2f;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.btn-one {
+    color: rgb(255, 0, 0);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn-one button {
+    transition: all 0.3s;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover button {
+    letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+p{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 200px;
+    width: 200px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 200px;
+    width: 200px;
+}
+
